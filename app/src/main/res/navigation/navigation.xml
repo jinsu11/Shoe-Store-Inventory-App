@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation.xml"
+    app:startDestination="@id/navigation_login">
+
+    <fragment
+        android:id="@+id/navigation_login"
+        android:name="kr.co.jinsu.shoestore.LoginFragment"
+        android:label="@string/login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_welcomeFragment"
+            app:destination="@id/navigation_welcone"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popUpTo="@id/navigation_login"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_welcone"
+        android:name="kr.co.jinsu.shoestore.WelcomeFragment"
+        android:label="@string/welcome"
+        tools:layout="@layout/fragment_welcome">
+        <action
+            android:id="@+id/action_welcomeFragment_to_instructionFragment"
+            app:destination="@id/navigation_instruction"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_instruction"
+        android:name="kr.co.jinsu.shoestore.InstructionFragment"
+        android:label="@string/instruction"
+        tools:layout="@layout/fragment_instruction">
+
+        <action
+            android:id="@+id/action_instructionFragment_to_shoeLIstFragment"
+            app:destination="@id/navigation_shoe_list"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popUpTo="@id/navigation_welcone"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_shoe_list"
+        android:name="kr.co.jinsu.shoestore.ShoeListFragment"
+        android:label="@string/shoe_list"
+        tools:layout="@layout/fragment_shoe_list">
+        <action
+            android:id="@+id/action_navigation_shoe_list_to_navigation_shoe_detail"
+            app:destination="@id/navigation_shoe_detail" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_shoe_detail"
+        android:name="kr.co.jinsu.shoestore.ShoeDetailFragment"
+        android:label="@string/shoe_detail"
+        tools:layout="@layout/fragment_shoe_detail" />
+</navigation>

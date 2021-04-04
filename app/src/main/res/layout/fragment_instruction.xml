@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".InstructionFragment">
+
+        <TextView
+            android:id="@+id/text_instruction_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="Instruction"
+            android:textColor="@android:color/black"
+            android:textSize="32sp" />
+
+        <TextView
+            android:id="@+id/text_instruction_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="12dp"
+            android:text="You can add a list of shoes\nFollowing elements can be saved"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/text_instruction_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:layout_margin="12dp"
+            android:text="- Shoe Name\n- Shoe Company\n- Shoe Size\n- Description"
+            android:textColor="@color/light_black"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button_next_instruction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="next" />
+
+    </LinearLayout>
+</layout>

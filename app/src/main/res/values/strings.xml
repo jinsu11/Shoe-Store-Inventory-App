@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Shoe Store</string>
+    <string name="shoe_name">Shoe Name:</string>
+    <string name="company">Company:</string>
+    <string name="shoe_size">Shoe Size:</string>
+    <string name="description">Description:</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="logout">Logout</string>
+    <string name="login">Login</string>
+    <string name="welcome">Welcome</string>
+    <string name="instruction">Instruction</string>
+    <string name="shoe_list">Shoe List</string>
+    <string name="shoe_detail">Shoe Detail</string>
+</resources>
