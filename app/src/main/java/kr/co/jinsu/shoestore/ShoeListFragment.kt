@@ -38,10 +38,6 @@ class ShoeListFragment: Fragment() {
         })
 
         setHasOptionsMenu(true)
-
-//        for(data in mainActivity.viewModel.shoeList.value!!)
-//            Log.i("ShoeListFragment", "shoe name: ${data.name}")
-        Log.i("ShoeListFragment", "shoeList size: ${mainActivity.viewModel.shoeList.value?.size}")
         return binding.root
     }
 
