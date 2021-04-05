@@ -2,6 +2,10 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
+
+    <!--  This layout is a simple one having 2 elements vertically except that a scroll view has
+      a linear layout in it. So, a linear layout is used for the entire layout. -->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

@@ -7,6 +7,9 @@
             type="kr.co.jinsu.shoestore.models.Shoe" />
     </data>
 
+    <!-- This layout is a somewhat complex one having 2 view groups in it. However, in order to express the bottom thin line,
+     a linear layout is used here instead of a constraint layout  -->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -66,7 +69,7 @@
                 android:id="@+id/text_item_shoe_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                tools:text="@string/shoe_name"
+                tools:text="shoe name here"
                 android:text="@{shoe.name}"
                 android:textColor="@color/black"
                 android:textSize="16sp" />
@@ -75,7 +78,7 @@
                 android:id="@+id/text_item_company_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                tools:text="@string/company"
+                tools:text="company name here"
                 android:text="@{shoe.company}"
                 android:textColor="@color/black"
                 android:textSize="16sp" />
@@ -84,7 +87,7 @@
                 android:id="@+id/text_item_shoe_size"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                tools:text="@string/shoe_size"
+                tools:text="shoe size here"
                 android:text="@{shoe.size}"
                 android:textColor="@color/black"
                 android:textSize="16sp" />
@@ -93,7 +96,7 @@
                 android:id="@+id/text_item_description"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                tools:text="@string/description"
+                tools:text="description here"
                 android:text="@{shoe.description}"
                 android:textColor="@color/black"
                 android:textSize="16sp" />
