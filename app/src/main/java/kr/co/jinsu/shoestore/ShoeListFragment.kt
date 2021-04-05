@@ -33,12 +33,15 @@ class ShoeListFragment: Fragment() {
             for (shoe in newShoeList) {
                 val itemBinding: ItemShoeBinding = DataBindingUtil.inflate(layoutInflater, R.layout.item_shoe, binding.containerShoes, false)
                 itemBinding.shoe = shoe
-                Timber.i("shoe name: ${shoe.name}")
                 binding.containerShoes.addView(itemBinding.root)
             }
         })
 
         setHasOptionsMenu(true)
+
+//        for(data in mainActivity.viewModel.shoeList.value!!)
+//            Log.i("ShoeListFragment", "shoe name: ${data.name}")
+        Log.i("ShoeListFragment", "shoeList size: ${mainActivity.viewModel.shoeList.value?.size}")
         return binding.root
     }
 

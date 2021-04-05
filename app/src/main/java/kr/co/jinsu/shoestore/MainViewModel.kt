@@ -22,4 +22,11 @@ class MainViewModel: ViewModel() {
     fun addShoe(newShoe: Shoe){
         _shoeList.value?.add(newShoe)
     }
+
+    override fun onCleared() {
+        super.onCleared()
+        Log.i("MainViewModel", "onCleared 호출")
+    }
+
+
 }
